@@ -1,0 +1,13 @@
+(
+    SELECT CITY, LENGTH(CITY) AS city_length
+    FROM STATION
+    ORDER BY LENGTH(CITY) ASC, CITY
+    limit 1
+)
+UNION ALL
+(
+    SELECT CITY, LENGTH(CITY) AS city_length
+    FROM STATION
+    ORDER BY LENGTH(CITY) DESC, CITY
+    limit 1
+);
